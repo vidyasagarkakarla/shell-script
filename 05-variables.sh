@@ -1,4 +1,5 @@
 #!/bib/bash
-USERNAME=$1
-PASSWORD=$2
-echo "Username is: $USERNAME, Password is: $PASSWORD"
+
+echo "please enter your Username"
+read USERNAME # the value entered above will be automatically atteched to USERNAME variable
+echo "Username is: $USERNAME"
