@@ -7,3 +7,17 @@ then
 else
     echo "you are root user"
 fi
+yum install mysql -y
+if [ $? -ne 0 ]
+then
+    echo "ERROR:: Installing MySQL is failed"
+else
+    echo "Installing MySQL is success"
+fi
+yum install git -y
+if [ $? -ne 0 ]
+then
+    echo "ERROR:: Installing GIT is failed"
+else
+    echo "Installing GIT is success"
+fi
