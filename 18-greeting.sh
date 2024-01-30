@@ -20,3 +20,11 @@ while getopts ":n:w:h" opt ; do
         h) USAGE; exit;;        
     esac 
 done
+
+if [ -z "$NAME" ] || [ -z "$WISHES" ]; then
+    echo "ERROR: Both -n and -w are manadatory options."
+    USAGE
+    exit 1
+fi
+
+echo "Heloo $NAME. $WISHES. I have been learning shell script."
